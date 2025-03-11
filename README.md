@@ -1,6 +1,6 @@
 # Geo
 
-This template should help get you started developing with Vue 3 in Vite.
+Historical map guessing game made with Vue.js.
 
 ## Recommended IDE Setup
 
