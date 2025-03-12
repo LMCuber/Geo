@@ -6,7 +6,7 @@
     </div>
 
     <span>{{ year }}</span>
-    <input id="time-slider" type="range" v-model="year" min="0" max="2000" step="100"/>
+    <input id="time-slider" type="range" v-model="year" min="-3000" max="2022" step="1"/>
 
     <!-- <button @click="console.log(getImages())">GETIM</button> -->
 
@@ -19,7 +19,7 @@
 
   import { ref } from "vue"
 
-  const year = ref(1200)
+  const year = ref(2022)
   const defaultImage = "/maps/default.png"
   var imageCache = {};
 
