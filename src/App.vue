@@ -8,7 +8,7 @@
     <span>{{ year }}</span>
     <input id="time-slider" type="range" v-model="year" min="0" max="2000" step="100"/>
 
-    <!-- <button @click="console.log(getImages())">GETIM</button> -->
+    <button @click="getPositions()">GETPOS</button>
 
   </div>
 
@@ -19,7 +19,7 @@
 
   import { ref } from "vue"
 
-  const year = ref(1200)
+  const year = ref(1800)
   const defaultImage = "/maps/default.png"
   var imageCache = {};
 
@@ -43,6 +43,10 @@
 
   function loadDefaultImage(e) {
     e.target.src = defaultImage;
+  }
+
+  function getPositions() {
+    console.log(year.value);
   }
 
 </script>
